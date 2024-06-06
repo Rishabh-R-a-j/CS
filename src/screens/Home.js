@@ -91,7 +91,7 @@ function HomePage(){
     var courseList = [];
     for(let i = 0; i < popularCourse.length; i++){
         courseList.push(
-            <a href={"/course/" + popularCourse[i].ID} className="course rel" key={"popular-course-" + i}>
+            <NavLink to={"/course/" + popularCourse[i].ID} className="course rel" key={"popular-course-" + i}>
                 <div className="block rel" style={{
                     background: "#e2e2e2 url(" + popularCourse[i].poster +") no-repeat center"
                 }}>
@@ -115,14 +115,14 @@ function HomePage(){
                     </div>
 
                 </div>
-            </a>
+            </NavLink>
         );
     }
 
     var topTutorsList = [];
     for(let i = 0; i < topTutors.length; i++){
         topTutorsList.push(
-            <a href="#" className="user-block rel noul" key={"top-tutors-" + i}>
+            <NavLink to="#" className="user-block rel noul" key={"top-tutors-" + i}>
                 <div className="user aic flex">
                     <div className="pic">
                         <img src={topTutors[i].dp} className="bl" />
@@ -132,7 +132,7 @@ function HomePage(){
                         <h2 className="s13 uname fontn c333">@{topTutors[i].username}</h2>
                     </div>
                 </div>                
-            </a>
+            </NavLink>
         );
     }
 

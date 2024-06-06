@@ -38,9 +38,7 @@ function CoursePage(props){
             ]
         }
     );
-
-    // const courseID = props.match.params.courseid;
-const courseID=1;
+ const courseID = props.match.params.courseid;
     var courseVideos = [];
 
 
