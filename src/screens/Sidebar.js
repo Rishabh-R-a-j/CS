@@ -31,7 +31,7 @@ export default function Sidebar(){
 //    // console.log(global.fire);
 
     return (
-        <div className="sidebar fixed">
+        <div className="sidebar rel">
             <a href="#" className="logo bl">
                 <img alt="Hello" src={logo} className="bl" />
             </a>
